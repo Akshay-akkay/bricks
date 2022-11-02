@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:{{package_name}}/{{{path}}}/{{feature_name}}.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class {{feature_name.pascalCase()}}View extends StatelessWidget with AutoRouteWrapper {
-  const {{#pascalCase}}{{feature_name}}{{/pascalCase}}View({Key? key}) : super(key: key);
+class {{feature_name.pascalCase()}}Screen extends StatelessWidget with AutoRouteWrapper {
+  const {{#pascalCase}}{{feature_name}}{{/pascalCase}}Screen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
