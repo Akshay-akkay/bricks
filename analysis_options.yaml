@@ -1,3 +1,9 @@
 analyzer:
   exclude:
-    [feature_route_bloc/**, feature_page_bloc/**, flutter_package/**, ui_package/**, model_json/**]
+    [
+      feature_auto_route_bloc/**,
+      feature_page_bloc/**,
+      flutter_package/**,
+      ui_package/**,
+      model_json/**,
+    ]

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:{{package_name}}/{{{path}}}/{{feature_name}}.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class {{feature_name.pascalCase()}}View extends StatelessWidget {
+class {{feature_name.pascalCase()}}View extends StatelessWidget with AutoRouteWrapper {
   const {{#pascalCase}}{{feature_name}}{{/pascalCase}}View({Key? key}) : super(key: key);
 
   @override
@@ -21,6 +21,14 @@ class {{feature_name.pascalCase()}}View extends StatelessWidget {
         }
         return Container();
       },
+    );
+  }
+
+  @override
+  Widget wrappedRoute(BuildContext context) {
+    return BlocProvider(
+      create: (_) => {{feature_name.pascalCase()}}Bloc(),
+      child: this,
     );
   }
 }

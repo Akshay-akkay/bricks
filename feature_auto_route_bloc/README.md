@@ -9,7 +9,7 @@ Installed version of [equatable] and [flutter_bloc] >= 8.0.0
 ## Usage 🚀
 
 ```
-mason make feature_route_bloc --feature_name login --package_name app
+mason make feature_auto_route_bloc --feature_name login --package_name app
 ```
 
 Note: for better usage the output directory should be inside the lib folder.
